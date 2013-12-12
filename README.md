@@ -22,7 +22,7 @@ NZAssetsLibrary uses [AGPhotoBrowser](https://github.com/andreagiavatto/AGPhotoB
 * Add a pod entry for NZAssetsLibrary to your Podfile `pod 'NZAssetsLibrary', '~> 0.0.1'`
 * Install the pod(s) by running `pod install`.
 
-### Usage
+## Usage
 
 Soon...
 
