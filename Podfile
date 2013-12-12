@@ -1,0 +1,1 @@
+pod 'AGPhotoBrowser', '~> 1.0.2'

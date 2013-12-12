@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D54830C128B04C55B165D310 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F041D67B309143EB8017D014 /* libPods.a */; };
+		F8E6939C1859C7E300811C03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E6939B1859C7E300811C03 /* Foundation.framework */; };
+		F8E6939E1859C7E300811C03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E6939D1859C7E300811C03 /* CoreGraphics.framework */; };
+		F8E693A01859C7E300811C03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E6939F1859C7E300811C03 /* UIKit.framework */; };
+		F8E6940D1859CDF100811C03 /* NZAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E693F61859CDF100811C03 /* NZAlbumViewController.m */; };
+		F8E6940E1859CDF100811C03 /* NZInitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E693F81859CDF100811C03 /* NZInitialViewController.m */; };
+		F8E694101859CDF100811C03 /* UIAlertView+ShowAppMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E693FD1859CDF100811C03 /* UIAlertView+ShowAppMessage.m */; };
+		F8E694111859CDF100811C03 /* NZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E693FF1859CDF100811C03 /* NZAppDelegate.m */; };
+		F8E694121859CDF100811C03 /* NZPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E694031859CDF100811C03 /* NZPhotoCell.m */; };
+		F8E694131859CDF100811C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E694041859CDF100811C03 /* Main.storyboard */; };
+		F8E694141859CDF100811C03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8E694061859CDF100811C03 /* Images.xcassets */; };
+		F8E694151859CDF100811C03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8E694081859CDF100811C03 /* InfoPlist.strings */; };
+		F8E694161859CDF100811C03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E6940A1859CDF100811C03 /* main.m */; };
+		F8E6941A1859CE5500811C03 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E694191859CE5500811C03 /* AssetsLibrary.framework */; };
+		F8E6941D1859CE7900811C03 /* NZAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E6941C1859CE7900811C03 /* NZAssetsLibrary.m */; };
+		F8E6943F185A212400811C03 /* NZAssetFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E6943C185A212400811C03 /* NZAssetFile.m */; };
+		F8E69440185A212400811C03 /* NZAssetImageFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E6943E185A212400811C03 /* NZAssetImageFile.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3EF0DC890C34468CB1486EFE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F041D67B309143EB8017D014 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E693981859C7E300811C03 /* NZAssetsLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NZAssetsLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E6939B1859C7E300811C03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F8E6939D1859C7E300811C03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F8E6939F1859C7E300811C03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F8E693BA1859C7E300811C03 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F8E693F51859CDF100811C03 /* NZAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAlbumViewController.h; sourceTree = "<group>"; };
+		F8E693F61859CDF100811C03 /* NZAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZAlbumViewController.m; sourceTree = "<group>"; };
+		F8E693F71859CDF100811C03 /* NZInitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZInitialViewController.h; sourceTree = "<group>"; };
+		F8E693F81859CDF100811C03 /* NZInitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZInitialViewController.m; sourceTree = "<group>"; };
+		F8E693FC1859CDF100811C03 /* UIAlertView+ShowAppMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+ShowAppMessage.h"; sourceTree = "<group>"; };
+		F8E693FD1859CDF100811C03 /* UIAlertView+ShowAppMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+ShowAppMessage.m"; sourceTree = "<group>"; };
+		F8E693FE1859CDF100811C03 /* NZAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAppDelegate.h; sourceTree = "<group>"; };
+		F8E693FF1859CDF100811C03 /* NZAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZAppDelegate.m; sourceTree = "<group>"; };
+		F8E694021859CDF100811C03 /* NZPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZPhotoCell.h; sourceTree = "<group>"; };
+		F8E694031859CDF100811C03 /* NZPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZPhotoCell.m; sourceTree = "<group>"; };
+		F8E694051859CDF100811C03 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8E694061859CDF100811C03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F8E694091859CDF100811C03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8E6940A1859CDF100811C03 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8E6940B1859CDF100811C03 /* NZAssetsLibrary-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NZAssetsLibrary-Info.plist"; sourceTree = "<group>"; };
+		F8E6940C1859CDF100811C03 /* NZAssetsLibrary-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NZAssetsLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		F8E694191859CE5500811C03 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		F8E6941B1859CE7900811C03 /* NZAssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAssetsLibrary.h; sourceTree = "<group>"; };
+		F8E6941C1859CE7900811C03 /* NZAssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZAssetsLibrary.m; sourceTree = "<group>"; };
+		F8E6943B185A212400811C03 /* NZAssetFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAssetFile.h; sourceTree = "<group>"; };
+		F8E6943C185A212400811C03 /* NZAssetFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZAssetFile.m; sourceTree = "<group>"; };
+		F8E6943D185A212400811C03 /* NZAssetImageFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAssetImageFile.h; sourceTree = "<group>"; };
+		F8E6943E185A212400811C03 /* NZAssetImageFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZAssetImageFile.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8E693951859C7E300811C03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E6941A1859CE5500811C03 /* AssetsLibrary.framework in Frameworks */,
+				F8E6939E1859C7E300811C03 /* CoreGraphics.framework in Frameworks */,
+				F8E693A01859C7E300811C03 /* UIKit.framework in Frameworks */,
+				F8E6939C1859C7E300811C03 /* Foundation.framework in Frameworks */,
+				D54830C128B04C55B165D310 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8E6938F1859C7E300811C03 = {
+			isa = PBXGroup;
+			children = (
+				F8E693F21859CDF100811C03 /* Example */,
+				F8E6939A1859C7E300811C03 /* Frameworks */,
+				F8E694181859CE3F00811C03 /* NZAssetsLibrary */,
+				F8E693991859C7E300811C03 /* Products */,
+				3EF0DC890C34468CB1486EFE /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		F8E693991859C7E300811C03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8E693981859C7E300811C03 /* NZAssetsLibrary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8E6939A1859C7E300811C03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8E694191859CE5500811C03 /* AssetsLibrary.framework */,
+				F8E6939B1859C7E300811C03 /* Foundation.framework */,
+				F8E6939D1859C7E300811C03 /* CoreGraphics.framework */,
+				F8E6939F1859C7E300811C03 /* UIKit.framework */,
+				F8E693BA1859C7E300811C03 /* XCTest.framework */,
+				F041D67B309143EB8017D014 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8E693F21859CDF100811C03 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				F8E693F31859CDF100811C03 /* Classes */,
+				F8E694061859CDF100811C03 /* Images.xcassets */,
+				F8E694071859CDF100811C03 /* SupportingFiles */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		F8E693F31859CDF100811C03 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F8E693FE1859CDF100811C03 /* NZAppDelegate.h */,
+				F8E693FF1859CDF100811C03 /* NZAppDelegate.m */,
+				F8E693F41859CDF100811C03 /* Controllers */,
+				F8E693F91859CDF100811C03 /* Helpers */,
+				F8E694001859CDF100811C03 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F8E693F41859CDF100811C03 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8E693F51859CDF100811C03 /* NZAlbumViewController.h */,
+				F8E693F61859CDF100811C03 /* NZAlbumViewController.m */,
+				F8E693F71859CDF100811C03 /* NZInitialViewController.h */,
+				F8E693F81859CDF100811C03 /* NZInitialViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F8E693F91859CDF100811C03 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F8E693FC1859CDF100811C03 /* UIAlertView+ShowAppMessage.h */,
+				F8E693FD1859CDF100811C03 /* UIAlertView+ShowAppMessage.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F8E694001859CDF100811C03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8E694041859CDF100811C03 /* Main.storyboard */,
+				F8E694011859CDF100811C03 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8E694011859CDF100811C03 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F8E694021859CDF100811C03 /* NZPhotoCell.h */,
+				F8E694031859CDF100811C03 /* NZPhotoCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F8E694071859CDF100811C03 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F8E694081859CDF100811C03 /* InfoPlist.strings */,
+				F8E6940A1859CDF100811C03 /* main.m */,
+				F8E6940B1859CDF100811C03 /* NZAssetsLibrary-Info.plist */,
+				F8E6940C1859CDF100811C03 /* NZAssetsLibrary-Prefix.pch */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F8E694181859CE3F00811C03 /* NZAssetsLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F8E6941B1859CE7900811C03 /* NZAssetsLibrary.h */,
+				F8E6941C1859CE7900811C03 /* NZAssetsLibrary.m */,
+				F8E6943A185A212400811C03 /* Models */,
+			);
+			path = NZAssetsLibrary;
+			sourceTree = "<group>";
+		};
+		F8E6943A185A212400811C03 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8E6943B185A212400811C03 /* NZAssetFile.h */,
+				F8E6943C185A212400811C03 /* NZAssetFile.m */,
+				F8E6943D185A212400811C03 /* NZAssetImageFile.h */,
+				F8E6943E185A212400811C03 /* NZAssetImageFile.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8E693971859C7E300811C03 /* NZAssetsLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8E693CA1859C7E300811C03 /* Build configuration list for PBXNativeTarget "NZAssetsLibrary" */;
+			buildPhases = (
+				68AC180A09FE45A4AEC55DD2 /* Check Pods Manifest.lock */,
+				F8E693941859C7E300811C03 /* Sources */,
+				F8E693951859C7E300811C03 /* Frameworks */,
+				F8E693961859C7E300811C03 /* Resources */,
+				079C6E361B9B4711820424C1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NZAssetsLibrary;
+			productName = NZAssetsLibrary;
+			productReference = F8E693981859C7E300811C03 /* NZAssetsLibrary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8E693901859C7E300811C03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NZ;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "No Zebra Network";
+			};
+			buildConfigurationList = F8E693931859C7E300811C03 /* Build configuration list for PBXProject "NZAssetsLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8E6938F1859C7E300811C03;
+			productRefGroup = F8E693991859C7E300811C03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8E693971859C7E300811C03 /* NZAssetsLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8E693961859C7E300811C03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E694131859CDF100811C03 /* Main.storyboard in Resources */,
+				F8E694151859CDF100811C03 /* InfoPlist.strings in Resources */,
+				F8E694141859CDF100811C03 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		079C6E361B9B4711820424C1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68AC180A09FE45A4AEC55DD2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8E693941859C7E300811C03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8E694121859CDF100811C03 /* NZPhotoCell.m in Sources */,
+				F8E6940D1859CDF100811C03 /* NZAlbumViewController.m in Sources */,
+				F8E694101859CDF100811C03 /* UIAlertView+ShowAppMessage.m in Sources */,
+				F8E6941D1859CE7900811C03 /* NZAssetsLibrary.m in Sources */,
+				F8E6940E1859CDF100811C03 /* NZInitialViewController.m in Sources */,
+				F8E6943F185A212400811C03 /* NZAssetFile.m in Sources */,
+				F8E69440185A212400811C03 /* NZAssetImageFile.m in Sources */,
+				F8E694161859CDF100811C03 /* main.m in Sources */,
+				F8E694111859CDF100811C03 /* NZAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8E694041859CDF100811C03 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8E694051859CDF100811C03 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8E694081859CDF100811C03 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8E694091859CDF100811C03 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8E693C81859C7E300811C03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F8E693C91859C7E300811C03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8E693CB1859C7E300811C03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF0DC890C34468CB1486EFE /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/SupportingFiles/NZAssetsLibrary-Prefix.pch";
+				INFOPLIST_FILE = "Example/SupportingFiles/NZAssetsLibrary-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F8E693CC1859C7E300811C03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF0DC890C34468CB1486EFE /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/SupportingFiles/NZAssetsLibrary-Prefix.pch";
+				INFOPLIST_FILE = "Example/SupportingFiles/NZAssetsLibrary-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8E693931859C7E300811C03 /* Build configuration list for PBXProject "NZAssetsLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E693C81859C7E300811C03 /* Debug */,
+				F8E693C91859C7E300811C03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8E693CA1859C7E300811C03 /* Build configuration list for PBXNativeTarget "NZAssetsLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8E693CB1859C7E300811C03 /* Debug */,
+				F8E693CC1859C7E300811C03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8E693901859C7E300811C03 /* Project object */;
+}
