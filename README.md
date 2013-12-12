@@ -1,5 +1,8 @@
 #NZAssetsLibrary
 
+NZAssetsLibrary is a ALAssetsLibrary extension.
+This class save, delete and loading images from specific album or directory.
+
 ## Requirements
 
 NZAssetsLibrary works on iOS 4+ and is compatible with ARC projects. It depends on the following Apple frameworks, which should already be included with most Xcode templates:
