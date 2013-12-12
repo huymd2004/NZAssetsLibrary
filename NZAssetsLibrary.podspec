@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
   }
   s.ios.deployment_target = '4.0'
   s.ios.frameworks = 'AssetsLibrary'
-  s.source_files = 'NZAssetsLibrary/*'
+  s.source_files = 'NZAssetsLibrary/**/*.{h,m}'
 end
