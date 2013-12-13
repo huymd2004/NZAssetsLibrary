@@ -61,19 +61,17 @@ NZAssetsLibrary *assetsLibrary = [NZAssetsLibrary defaultAssetsLibrary];
 [assetsLibrary savePNGImageAtDocumentDirectory:image];
 ```
 
-* Load image
+* Load images
 
 ```objective-c
 #import "NZAssetsLibrary.h"
 #import "NZAssetImageFile.h"
 ...
 
-UIImage *image = [UIImage imageNamed:@"image.png"];
-
 // NZAssetsLibrary unique instance
 NZAssetsLibrary *assetsLibrary = [NZAssetsLibrary defaultAssetsLibrary];
 
-// load image from album
+// load images from album
 [assetsLibrary loadImagesFromAlbum:@"My Album" withCallback:^(NSArray<NZAssetImageFile> *assets, NSError *error) {
     if (error) {
         NSLog(@"Could not load images.");
@@ -83,7 +81,7 @@ NZAssetsLibrary *assetsLibrary = [NZAssetsLibrary defaultAssetsLibrary];
     NSLog(@"Loaded successfully.");
 }];
 
-// load image from device document directory
+// load images from device document directory
 NSArray<NZAssetImageFile> *array = [assetsLibrary loadImagesFromDocumentDirectory];
 ```
 
@@ -98,7 +96,6 @@ NZAssetFile *file = ...;
 
 // NZAssetsLibrary unique instance
 NZAssetsLibrary *assetsLibrary = [NZAssetsLibrary defaultAssetsLibrary];
-
 [assetsLibrary deleteFile:file];
 ```
 
