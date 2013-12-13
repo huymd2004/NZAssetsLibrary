@@ -46,41 +46,6 @@
 #pragma mark -
 #pragma mark - Public instance methods
 
-- (void)addAssetURL:(NSURL *)assetURL toAlbum:(NSString *)albumName withCompletion:(SaveImageCompletion)completion
-{
-    __block BOOL albumWasFound = NO;
-    
-    [self enumerateGroupsWithTypes:ALAssetsGroupAlbum
-                        usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
-                            if ([albumName compare:[group valueForProperty:ALAssetsGroupPropertyName]] == NSOrderedSame) {
-                                albumWasFound = YES;
-                                
-                                [self assetForURL:assetURL
-                                      resultBlock:^(ALAsset *asset) {
-                                          [group addAsset:asset];
-                                          completion(nil);
-                                      } failureBlock:completion];
-                                
-                                return;
-                            }
-                            
-                            if (!group && !albumWasFound) {
-                                __weak ALAssetsLibrary *weakSelf = self;
-                                
-                                [self addAssetsGroupAlbumWithName:albumName
-                                                      resultBlock:^(ALAssetsGroup *group) {
-                                                          [weakSelf assetForURL:assetURL
-                                                                    resultBlock:^(ALAsset *asset) {
-                                                                        [group addAsset:asset];
-                                                                        completion(nil);
-                                                                    } failureBlock:completion];
-                                                      } failureBlock:completion];
-                                
-                                return;
-                            }
-                        } failureBlock:completion];
-} 
-
 - (void)deleteFile:(NZAssetFile *)file
 {
     NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -218,6 +183,41 @@
 
 #pragma mark -
 #pragma mark - Private methods
+
+- (void)addAssetURL:(NSURL *)assetURL toAlbum:(NSString *)albumName withCompletion:(SaveImageCompletion)completion
+{
+    __block BOOL albumWasFound = NO;
+    
+    [self enumerateGroupsWithTypes:ALAssetsGroupAlbum
+                        usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+                            if ([albumName compare:[group valueForProperty:ALAssetsGroupPropertyName]] == NSOrderedSame) {
+                                albumWasFound = YES;
+                                
+                                [self assetForURL:assetURL
+                                      resultBlock:^(ALAsset *asset) {
+                                          [group addAsset:asset];
+                                          completion(nil);
+                                      } failureBlock:completion];
+                                
+                                return;
+                            }
+                            
+                            if (!group && !albumWasFound) {
+                                __weak ALAssetsLibrary *weakSelf = self;
+                                
+                                [self addAssetsGroupAlbumWithName:albumName
+                                                      resultBlock:^(ALAssetsGroup *group) {
+                                                          [weakSelf assetForURL:assetURL
+                                                                    resultBlock:^(ALAsset *asset) {
+                                                                        [group addAsset:asset];
+                                                                        completion(nil);
+                                                                    } failureBlock:completion];
+                                                      } failureBlock:completion];
+                                
+                                return;
+                            }
+                        } failureBlock:completion];
+}
 
 - (NSString *)imagePathWithExtension:(NSString *)extension
 {
