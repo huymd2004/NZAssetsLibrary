@@ -60,6 +60,8 @@
 #ifdef NZDEBUG
             NSLog(@"%s Save image with error: %@", __PRETTY_FUNCTION__, error);
 #endif
+            
+            return;
         }
         
         [UIAlertView alertWithMessage:@"Image saved successfully."];
