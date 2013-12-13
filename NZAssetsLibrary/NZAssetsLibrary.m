@@ -10,9 +10,16 @@
 
 @interface NZAssetsLibrary ()
 
+- (void)addAssetURL:(NSURL *)assetURL
+            toAlbum:(NSString *)albumName
+     withCompletion:(SaveImageCompletion)completion;
+
 - (NSString *)imagePathWithExtension:(NSString *)extension;
+
 - (NSString *)imagesDirectory;
+
 - (NSString *)jpgPath;
+
 - (NSString *)pngPath;
 
 @end
@@ -92,7 +99,7 @@
     }
 }
 
-- (void)loadAssetsFromAlbum:(NSString *)albumName withCallback:(LoadImagesCallback)callback
+- (void)loadImagesFromAlbum:(NSString *)albumName withCallback:(LoadImagesCallback)callback
 {
     __block NSMutableArray<NZAssetImageFile> *items = [@[] mutableCopy];
     

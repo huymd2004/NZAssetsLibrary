@@ -38,13 +38,9 @@ typedef void(^LoadImagesCallback)(NSArray<NZAssetImageFile> *items, NSError *err
 - (instancetype) init
 __attribute__((unavailable("[-init] is not allowed, use [+defaultAssetsLibrary]")));
 
-- (void)addAssetURL:(NSURL *)assetURL
-            toAlbum:(NSString *)albumName
-     withCompletion:(SaveImageCompletion)completion;
-
 - (void)deleteImageAtPath:(NSString *)path;
 
-- (void)loadAssetsFromAlbum:(NSString *)albumName
+- (void)loadImagesFromAlbum:(NSString *)albumName
                withCallback:(LoadImagesCallback)callback;
 
 - (NSArray<NZAssetImageFile> *)loadImagesFromDocumentDirectory;

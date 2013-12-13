@@ -144,7 +144,7 @@
     
     // load from album
     ///*
-     [assetsLibrary loadAssetsFromAlbum:@"My Album" withCallback:^(NSArray<NZAssetImageFile> *assets, NSError *error) {
+     [assetsLibrary loadImagesFromAlbum:@"My Album" withCallback:^(NSArray<NZAssetImageFile> *assets, NSError *error) {
         if (error) {
             [UIAlertView alertWithMessage:@"Could not load images."];
             return;
