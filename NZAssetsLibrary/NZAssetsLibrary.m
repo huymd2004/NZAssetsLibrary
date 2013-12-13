@@ -81,19 +81,19 @@
                         } failureBlock:completion];
 } 
 
-- (void)deleteImageAtPath:(NSString *)path
+- (void)deleteFile:(NZAssetFile *)file
 {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
-    if ([fileManager isDeletableFileAtPath:path]) {
+    if ([fileManager isDeletableFileAtPath:file.path]) {
         NSError *error;
-        [fileManager removeItemAtPath:path error:&error];
+        [fileManager removeItemAtPath:file.path error:&error];
         
 #ifdef NZDEBUG
         if (error) {
-            NSLog(@"%s Cannot delete file at path: %@", __PRETTY_FUNCTION__, path);
+            NSLog(@"%s Cannot delete file at path: %@", __PRETTY_FUNCTION__, file.path);
         } else {
-            NSLog(@"%s File deleted: %@", __PRETTY_FUNCTION__, path);
+            NSLog(@"%s File deleted: %@", __PRETTY_FUNCTION__, file.path);
         }
 #endif
     }

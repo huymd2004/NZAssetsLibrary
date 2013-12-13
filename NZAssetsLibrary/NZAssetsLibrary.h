@@ -24,6 +24,7 @@
 // THE SOFTWARE.
 
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "NZAssetFile.h"
 #import "NZAssetImageFile.h"
 
 typedef void(^SaveImageCompletion)(NSError* error);
@@ -38,7 +39,7 @@ typedef void(^LoadImagesCallback)(NSArray<NZAssetImageFile> *items, NSError *err
 - (instancetype) init
 __attribute__((unavailable("[-init] is not allowed, use [+defaultAssetsLibrary]")));
 
-- (void)deleteImageAtPath:(NSString *)path;
+- (void)deleteFile:(NZAssetFile *)file;
 
 - (void)loadImagesFromAlbum:(NSString *)albumName
                withCallback:(LoadImagesCallback)callback;
