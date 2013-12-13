@@ -1,13 +1,13 @@
 #NZAssetsLibrary
 
 NZAssetsLibrary is a ALAssetsLibrary extension.
-This class save, delete and loading images from specific album or device folder.
+This class save, delete and load images from specific album or device folder.
 
 [![Build Status](https://api.travis-ci.org/NZN/NZAssetsLibrary.png)](https://api.travis-ci.org/NZN/NZAssetsLibrary.png)
 
 ## Requirements
 
-NZAssetsLibrary works on iOS 4+ and is compatible with ARC projects. It depends on the following Apple frameworks, which should already be included with most Xcode templates:
+NZAssetsLibrary works on iOS 5.0+ and is compatible with ARC projects. It depends on the following Apple frameworks, which should already be included with most Xcode templates:
 
 * AssetsLibrary.framework
 * Foundation.framework
@@ -23,7 +23,7 @@ The sample project uses [AGPhotoBrowser](https://github.com/andreagiavatto/AGPho
 
 [CocoaPods](http://cocoapods.org) is the recommended way to add NZAssetsLibrary to your project.
 
-* Add a pod entry for NZAssetsLibrary to your Podfile `pod 'NZAssetsLibrary', '~> 0.0.1'`
+* Add a pod entry for NZAssetsLibrary to your Podfile `pod 'NZAssetsLibrary', '~> 0.0.2'`
 * Install the pod(s) by running `pod install`.
 
 ### Source files
