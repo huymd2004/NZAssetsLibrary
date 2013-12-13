@@ -6,6 +6,7 @@ Pod::Spec.new do |s|
   s.homepage	 = 'https://github.com/NZN/NZAssetsLibrary'
   
   s.requires_arc = true
+  s.platform = :ios
   s.ios.deployment_target = '5.0'
   
   s.authors = { 'Bruno Tortato Furtado' => 'bruno.furtado@gruponzn.com' }
