@@ -23,7 +23,7 @@ The sample project uses [AGPhotoBrowser](https://github.com/andreagiavatto/AGPho
 
 [CocoaPods](http://cocoapods.org) is the recommended way to add NZAssetsLibrary to your project.
 
-* Add a pod entry for NZAssetsLibrary to your Podfile `pod 'NZAssetsLibrary', :git => 'https://github.com/NZN/NZAssetsLibrary'`
+* Add a pod entry for NZAssetsLibrary to your Podfile `pod 'NZAssetsLibrary', '~> 0.0.2'`
 * Install the pod(s) by running `pod install`.
 
 ### Source files
