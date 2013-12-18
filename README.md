@@ -4,6 +4,8 @@ NZAssetsLibrary is a ALAssetsLibrary extension.
 This class save, delete and load images from specific album or device folder.
 
 [![Build Status](https://api.travis-ci.org/NZN/NZAssetsLibrary.png)](https://api.travis-ci.org/NZN/NZAssetsLibrary.png)
+[![Cocoapods](https://cocoapod-badges.herokuapp.com/v/NZAssetsLibrary/badge.png)](http://beta.cocoapods.org/?q=name%3Anzassetslibrary%2A)
+[![Cocoapods](https://cocoapod-badges.herokuapp.com/p/NZAssetsLibrary/badge.png)](http://beta.cocoapods.org/?q=name%3Anzassetslibrary%2A)
 
 ## Requirements
 
